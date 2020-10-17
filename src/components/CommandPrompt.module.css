@@ -1,0 +1,27 @@
+.User {
+  color: limegreen;
+}
+
+.CommandPrompt input {
+  outline: none;
+  background-color: black;
+  border-width: 0;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+  width: 100%;
+  display: inline;
+}
+
+.LastCommand {
+  color: cyan;
+}
+
+@media only screen and (min-width: 576px) {
+  .CommandPrompt br {
+    display: none;
+  }
+  .CommandPrompt input {
+    width: 50%;
+  }
+}
