@@ -24,8 +24,10 @@ const CommandPrompt = (props) => {
       }
     });
     commandInputRef.current.focus();
-    document.querySelector('*').addEventListener('click', () => {
-      commandInputRef.current.focus();
+    document.querySelector('*').addEventListener('click', (event) => {
+      if(!(event.target.getAttribute('href'))) {
+        commandInputRef.current.focus();
+      }
     });
   }, [props, commandInput]);
 
