@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 
 import styles from './App.module.css';
 import CommandPrompt from './components/CommandPrompt';
@@ -17,9 +16,9 @@ function App() {
 
   // effect
   useEffect(() => {
-    axios.get('https://vasanimit9.pythonanywhere.com/static/repos.json?t='
-      + parseInt(Date.now() / 600000))
-      .then(res => res.data)
+    fetch('https://vasanimit9.pythonanywhere.com/static/repos.json?t='
+        + parseInt(Date.now() / 600000))
+      .then(res => res.json())
       .then(data => {
         for (let i = 0; i < data.length; i++) {
           for (let j = 0; j < i; j++) {
@@ -33,7 +32,7 @@ function App() {
         return data;
       })
       .then(data => updateRepos(data))
-      .catch(e => console.error("Can't fetch repos.\n", e));
+      .catch(e => console.error(e));
   }, []);
   useEffect(() => {
     fetch('/mit_ascii.txt')

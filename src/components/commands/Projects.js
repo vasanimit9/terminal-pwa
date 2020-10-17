@@ -28,8 +28,8 @@ const Projects = (props) => {
 
   return (
     <span>
-      {repos.map((repo) => (
-        <Fragment>
+      {repos.map((repo, index) => (
+        <Fragment key={index}>
           Name: {repo.name}<br />
           Description: {repo.description}<br />
           GitHub: <a
