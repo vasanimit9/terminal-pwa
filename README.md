@@ -1,9 +1,15 @@
-## The react app code for vasanimit9.github.io
+The react app code for vasanimit9.github.io
+===========================================
 
-### Mobile
+Mobile
+------
 <img src='mobile.jpg' style='width: 32%;' />
 <br />
-### Desktop
+
+Desktop
+-----------
 <img src='desktop.png' style='width: 100%;' />
 <br />
-Created with create-react-app.
+
+<br />
+Created with <code>create-react-app</code>.
