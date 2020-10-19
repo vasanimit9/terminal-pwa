@@ -35,13 +35,13 @@ function App() {
       .catch(e => console.error(e));
   }, []);
   useEffect(() => {
-    fetch('/mit_ascii.txt')
+    fetch('./mit_ascii.txt')
       .then(res => res.text())
       .then(data => updateMitASCII(data))
       .catch(e => console.error(e));
   }, []);
   useEffect(() => {
-    fetch('/hallows_ascii.txt')
+    fetch('./hallows_ascii.txt')
       .then(res => res.text())
       .then(data => updateHallowsASCII(data))
       .catch(e => console.error(e));
