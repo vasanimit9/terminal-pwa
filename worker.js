@@ -1,11 +1,11 @@
-let CACHE_NAME = 'vasanimit9.github.io.6';
+let CACHE_NAME = 'vasanimit9.github.io.7';
 
 let URLS_TO_CACHE = [
-  './',
-  './mit_ascii.txt',
-  './hallows_ascii.txt',
-  './assets/CascadiaCodePL.woff2',
-  './logo.png'
+  '/terminal-pwa/',
+  '/terminal-pwa/mit_ascii.txt',
+  '/terminal-pwa/hallows_ascii.txt',
+  '/terminal-pwa/assets/CascadiaCodePL.woff2',
+  '/terminal-pwa/logo.png'
 ];
 
 self.addEventListener('install', event => {
